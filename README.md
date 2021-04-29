@@ -113,9 +113,9 @@ ________________________________________________________________________________
 | --- | :---: |  :---: | :---: |
 | Assemble data | H | 10 hrs | TBD hrs |
 |Build out framework | H | 10hrs |TBD hrs|
-| Render data | H | 10hrs| TBD hrs |
-|Less ugly| H | 5 hrs |TBD hrs |
-| Total | H | 35hrs| TBD hrs |
+| Render data | M | 10hrs| TBD hrs |
+|Less ugly| L | 5 hrs |TBD hrs |
+| Total |   | 35hrs| TBD hrs |
 
 ## Additional Libraries
 
