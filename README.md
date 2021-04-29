@@ -59,7 +59,7 @@ Will use the Star Wars API to create guide or the SW universe.  Final goal is to
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
 - [Mobile First Figma](https://www.figma.com/file/GcMtI3P0fA4tpQdW9WNKat/Untitled?node-id=0%3A1)
-- [React Design](##Components)
+- [React Design](#Components)
 
 
 ### MVP/PostMVP
