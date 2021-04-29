@@ -7,7 +7,7 @@
 
 ## Project Description
 
-Will use the Star Wars API to do something 
+Will use the Star Wars API to create guide or the SW universe.  Final goal is to create a pusedo card battle game with a counter for recording wins and loses; perhaps remove losing toon from array. 
 
 ## API
 
