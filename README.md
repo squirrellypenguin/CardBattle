@@ -1,4 +1,5 @@
-# Project Overview
+![icon](https://raw.githubusercontent.com/squirrellypenguin/projectapp/main/geonosis_by_radiusss.png)
+# <span style="color:yellow;text-shadow:3px 3px rgba(46, 49, 49, .7);"><center>SWikiBattle</center></span>
 
 ## Project Links
 
@@ -81,16 +82,17 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 ## Components
 
-Nav
-   Main
-	People
-	  	Person
-	Transports
-		Transport
-	Planets	
-		Planet
-	Battle 
-		Person
+Header 
+	Nav
+Main 
+-----People
+----------Person
+-----Transports
+----------Transport
+-----Planets	
+----------Planet
+-----Battle | counter
+Footer
 
 
 
@@ -102,17 +104,16 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | --- | :---: |  
 | App | This will make the initial data pull and include React Router| 
 | Header | This will render the header include the nav | 
-| Footer | This will render the header include the nav | 
-| Main	| 
-|Transports/Transport|
-|Planets/Planet|
-|Battle/Person| Draws in the selected people and fight one another with simple logic and stores counter
-|Counter| Stores the fight total
+| Footer | This will render the footer | 
+| Main	|  Provide  route to sub sections|
+|Transports/Transport| Subsection overview with detail component |
+|Planets/Planet|  Subsection overview with detail component |
+|People|Person|  Subsection overview with detail component |
+|Battle| Draws in the selected people and fight one another with simple logic and sets counter |
+|Counter| counts|
 
 
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
-
-| Component | Priority | Estimated Time | Actual Time |
+| Build Step | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: |
 | Assemble data | H | 10 hrs | TBD hrs |
 |Build out framework | H | 10hrs |TBD hrs|
