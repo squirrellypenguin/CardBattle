@@ -11,9 +11,7 @@ Will use the Star Wars API to do something
 
 ## API
 
-SWAPI 
-
-https://swapi.dev/api/people/
+[SWAPI](https://swapi.dev/api/people/)
 
 ```
 {
