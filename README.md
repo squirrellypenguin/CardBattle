@@ -5,7 +5,7 @@
 ## Project Links
 
 - [REPO](https://github.com/squirrellypenguin/projectapp)
-- [LIVE](https://objective-kowalevski-4e733f.netlify.app/)
+- [LIVE](https://rg2g.netlify.app/)
 
 ## Project Description
 
