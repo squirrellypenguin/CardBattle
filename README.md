@@ -1,4 +1,4 @@
-# <span style="color:yellow;text-shadow:3px 3px rgba(46, 49, 49, .7);"><center>SWikiBattle</center></span>
+# <span style="color:yellow;text-shadow:3px 3px rgba(46, 49, 49, .7);"><center>RG2G -Rebels Guide to the Galaxy</center></span>
 <right>![icon](https://raw.githubusercontent.com/squirrellypenguin/projectapp/main/geonosis_by_radiusss.png)</right>
 
 
