@@ -1,4 +1,4 @@
-![icon](https://raw.githubusercontent.com/squirrellypenguin/projectapp/main/geonosis_by_radiusss.png)
+<right>![icon](https://raw.githubusercontent.com/squirrellypenguin/projectapp/main/geonosis_by_radiusss.png)</right>
 # <span style="color:yellow;text-shadow:3px 3px rgba(46, 49, 49, .7);"><center>SWikiBattle</center></span>
 
 ## Project Links
@@ -59,12 +59,10 @@ Will use the Star Wars API to create guide or the SW universe.  Final goal is to
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
 - [Mobile First Figma](https://www.figma.com/file/GcMtI3P0fA4tpQdW9WNKat/Untitled?node-id=0%3A1)
-- [add link to your react architecture]()
+- [React Design](##Components)
 
 
-### MVP/PostMVP - 5min
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+### MVP/PostMVP
 
 #### MVP EXAMPLE
 - Find and use external api 
@@ -82,24 +80,21 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 ## Components
 
-Header 
-	Nav
-Main 
------People
-----------Person
------Transports
-----------Transport
------Planets	
-----------Planet
------Battle | counter
-Footer
-
-
-
-##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
-
-Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
-
+**App**
+```
++-- Header
+|   +-- Nav
++-- Main
+|   +-- People
+|       +-- Person
+|   +-- Transports
+|       +-- Transport
+|   +-- Planets
+|       +-- Planet
+|   +-- Battle && counter
++-- Footer
+```
+____________________________________________________________________________
 | Component | Description | 
 | --- | :---: |  
 | App | This will make the initial data pull and include React Router| 
@@ -112,7 +107,7 @@ Based on the initial logic defined in the previous sections try and breakdown th
 |Battle| Draws in the selected people and fight one another with simple logic and sets counter |
 |Counter| counts|
 
-
+_________________________________________________________________________________________________________
 | Build Step | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: |
 | Assemble data | H | 10 hrs | TBD hrs |
