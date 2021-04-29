@@ -1,5 +1,6 @@
-<right>![icon](https://raw.githubusercontent.com/squirrellypenguin/projectapp/main/geonosis_by_radiusss.png)</right>
 # <span style="color:yellow;text-shadow:3px 3px rgba(46, 49, 49, .7);"><center>SWikiBattle</center></span>
+<right>![icon](https://raw.githubusercontent.com/squirrellypenguin/projectapp/main/geonosis_by_radiusss.png)</right>
+
 
 ## Project Links
 
