@@ -9,7 +9,7 @@
 
 ## Project Description
 
-Will use the Star Wars API to create guide or the SW universe.  Final goal is to create a pusedo card battle game with a counter for recording wins and loses; perhaps remove losing toon from array. 
+Will use the Star Wars API to create a guide for the SW universe.  Final goal is to create a pusedo card battle game with a counter for recording wins and loses; perhaps remove losing toon from array. 
 
 ## API
 
@@ -56,8 +56,6 @@ Will use the Star Wars API to create guide or the SW universe.  Final goal is to
 
 
 ## Wireframes
-
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
 - [Mobile First Figma](https://www.figma.com/file/GcMtI3P0fA4tpQdW9WNKat/Untitled?node-id=0%3A1)
 - [React Design](#Components)
