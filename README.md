@@ -3,7 +3,7 @@
 ## Project Links
 
 - [https://github.com/squirrellypenguin/projectapp](REPO)
-- [add your deployment link]()
+- [https://objective-kowalevski-4e733f.netlify.app/](Live)
 
 ## Project Description
 
@@ -59,7 +59,7 @@ https://swapi.dev/api/people/
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [add link to your wireframes]()
+- (https://www.figma.com/file/GcMtI3P0fA4tpQdW9WNKat/Untitled?node-id=0%3A1)[]Mobile First Figma]
 - [add link to your react architecture]()
 
 
