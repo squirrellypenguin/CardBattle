@@ -110,10 +110,10 @@ ________________________________________________________________________________
 | Build Step | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: |
 | Assemble data | H | 10 hrs | TBD hrs |
-|Build out framework | H | 10hrs |TBD hrs|
-| Render data | M | 10hrs| TBD hrs |
-|Less ugly| L | 5 hrs |TBD hrs |
-| Total |   | 35hrs| TBD hrs |
+|Build out framework | H | 10 hrs |TBD hrs|
+| Render data | M | 10 hrs| TBD hrs |
+|Less ugly| L | 05 hrs |TBD hrs |
+| Total |   | 35 hrs| TBD hrs |
 
 ## Additional Libraries
 
