@@ -108,11 +108,11 @@ ____________________________________________________________________________
 
 _________________________________________________________________________________________________________
 | Build Step | Priority | Estimated Time | Actual Time | |
-| --- | :---: |  :---: | :---: |
+| --- | :---: |  :---: | :---: | |
 | Assemble data | H | 10 hrs | TBD hrs | Frame api requests, and request prop handing and state management|
 |Build out framework | H | 10 hrs |TBD hrs| build basic layout for data |
 | Render data | M | 10 hrs| TBD hrs | deal with any image assets basic semantic markup |
-|Less ugly| L | 05 hrs |TBD hrs | colors!!!!!!
+|Less ugly| L | 05 hrs |TBD hrs | colors!!!!!!|
 | Total |   | 35 hrs| TBD hrs | |
 ## Additional Libraries
 
