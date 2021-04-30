@@ -107,7 +107,7 @@ ____________________________________________________________________________
 |Counter| counts|
 
 _________________________________________________________________________________________________________
-| Build Step | Priority | Estimated Time | Actual Time | |
+| Build Step | Priority | Estimated Time | Actual Time |__ |
 | --- | :---: |  :---: | :---: | |
 | Assemble data | H | 10 hrs | TBD hrs | Frame api requests, and request prop handing and state management|
 |Build out framework | H | 10 hrs |TBD hrs| build basic layout for data |
