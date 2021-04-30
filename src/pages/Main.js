@@ -1,4 +1,7 @@
 import React from 'react';
+import Planets from './Planets/Planets'
+import People from './People/People'
+import Ships from './Ships/Ships'
 
 const Main = (props) => {
 
@@ -8,6 +11,9 @@ const Main = (props) => {
 
         <div>
         <h1>MAIN APP</h1>
+        <Planets />
+        <People />
+        <Ships />
         </div>
 
     )

@@ -7,7 +7,8 @@ const Battle = (props) => {
     return (
 
         <div>
-        PLANETS
+        <h2>FIGHT! <br />
+        ROUND 1</h2>
         </div>
 
     )
