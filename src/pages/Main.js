@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Planets from './Planets/Planets'
 import Test from './Test'
 import Ships from './Ships/Ships'
-
+import People from './People/People'
 const Main = (props) => {
 
         //  
@@ -38,7 +38,7 @@ const Main = (props) => {
         <div>
         <h1>MAIN APP</h1>
         {/* <Planets /> */}
-        <Test people={people}/>
+        <People people={people}/>
         {/* <Ships /> */}
         </div>
 
