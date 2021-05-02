@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {Route,Switch, Link} from 'react-router-dom';
 
 import Planets from './Planets/Planets'
-import Test from './Test'
+import Battle from './Battle/Battle'
 import Ships from './Ships/Ships'
 import People from './People/People'
 const Main = (props) => {
@@ -80,9 +80,9 @@ const Main = (props) => {
                 </div>
             </Link>
 
-            <Link to="/ships">
+            <Link to="/battle">
                 <div>
-                    <p>ships</p>
+                    <p>Battle</p>
                 </div>
             </Link>
         </Route>
@@ -90,6 +90,9 @@ const Main = (props) => {
         <Route path="/people/">
             <People people={people}  handleClick={handleClick}/>
         </Route>
+        <Route path="/battle/">
+            <Battle fight={fight}    /> 
+            </Route>
 
         {/* <Route path="/planets/">
         <People people={Planets} />

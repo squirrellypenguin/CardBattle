@@ -1,20 +1,13 @@
-import React, {
-    useState,
-    useEffect
-  } from 'react';
+import React from 'react';
 
 
   const Person = (props) => {
-    console.log(props)
-   
+
+          
+            return (
+      <h1>help</h1>
   
-    return (
-      <div className="AllTheThings">
-       {/* <p>{props.name}</p> */}
-      </div>
-        
-  
-     );
+     )
   }
   
-  export default Person
+  export default Person;

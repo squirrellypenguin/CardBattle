@@ -56,8 +56,8 @@ align-content: center;
   display: flex;
   justify-content: left;
   align-content: left
-  
-  
- 
-
-}
+  }
+.battle{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}  
