@@ -52,10 +52,10 @@ align-content: center;
   padding-top: 20px;
   grid-column: 1/3;
 }
-.foo {
+.people-button {
   display: flex;
-  justify-content: space-between;
-  align-content: space-between;
+  justify-content: left;
+  align-content: left
   
   
  

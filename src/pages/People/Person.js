@@ -5,13 +5,16 @@ import React, {
 
 
   const Person = (props) => {
-console.log(props)
-
+    console.log(props)
+   
+  
     return (
-
-        <div>
- <h1>{props.name}</h1>
-        </div>
-    )
+      <div className="AllTheThings">
+       {/* <p>{props.name}</p> */}
+      </div>
+        
+  
+     );
   }
+  
   export default Person

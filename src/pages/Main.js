@@ -8,10 +8,20 @@ import People from './People/People'
 const Main = (props) => {
 
         //  
-  
+
+
   // Set up up api call function 
   const url = 'https://akabab.github.io/starwars-api/api/all.json'
   const [people, setPeople] = useState(null)
+
+  const [fight, setFight] =useState([{}]);
+  
+  const oppponetGenerator = () => {
+    return Math.floor(Math.random() * (87 - 0) + 0);
+// console.log(core)
+
+  }
+
 
   const getPeople = async () => {
     const response = await fetch(url);
@@ -35,6 +45,22 @@ const Main = (props) => {
      getPeople();
     
    }, []);
+
+   const handleClick = (input) => {
+    let  player = input
+    let  opponent = oppponetGenerator() 
+    let battleArray = []
+    battleArray.push(player)
+    battleArray.push(people[opponent])
+    console.log(battleArray)
+     console.group(input)
+       console.log(people[opponent])
+       setFight(battleArray)
+       console.log(fight)
+ 
+   };
+
+
     return (
     <div>    
         <Switch>
@@ -56,13 +82,13 @@ const Main = (props) => {
 
             <Link to="/ships">
                 <div>
-                    <p>peeps</p>
+                    <p>ships</p>
                 </div>
             </Link>
         </Route>
        
         <Route path="/people/">
-            <People people={people} />
+            <People people={people}  handleClick={handleClick}/>
         </Route>
 
         {/* <Route path="/planets/">

@@ -8,6 +8,9 @@ import Main from './pages/Main'
 
 
 function App() {
+
+
+
   let results = ""
   const url = 'https://swapi.dev/api/'
   let listOfData= ["people", "planets", 'starships', 'vehicles']
