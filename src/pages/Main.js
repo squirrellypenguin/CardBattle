@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react';
+import {Route,Switch, Link} from 'react-router-dom';
+
 import Planets from './Planets/Planets'
 import Test from './Test'
 import Ships from './Ships/Ships'
@@ -34,13 +36,46 @@ const Main = (props) => {
     
    }, []);
     return (
+    <div>    
+        <Switch>
+        <Route exact path='/'>
+        
+                <h1>MAIN APP</h1>
+        
+            <Link to="/people">
+                <div>
+                    <p>peeps</p>
+                </div>
+            </Link>
 
-        <div>
-        <h1>MAIN APP</h1>
-        {/* <Planets /> */}
-        <People people={people}/>
-        {/* <Ships /> */}
-        </div>
+            <Link to="/planets">
+                <div>
+                    <p>planets</p>
+                </div>
+            </Link>
+
+            <Link to="/ships">
+                <div>
+                    <p>peeps</p>
+                </div>
+            </Link>
+        </Route>
+       
+        <Route path="/people/">
+            <People people={people} />
+        </Route>
+
+        {/* <Route path="/planets/">
+        <People people={Planets} />
+        </Route> */}
+{/* 
+        <Route path="/ships/">
+        <People people={ships} />
+        </Route> */}
+
+
+        </Switch>
+    </div>
 
     )
 }

@@ -4,12 +4,60 @@
 
 .small-picture {
   height: 96px;
+  width:76px;
+  border-radius: 60px;
 }
 
 .container {
   padding-left: 0rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr ;
 
   gap: 5px 5px;
+}
+
+.small-container {
+  padding-left: 0rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  text-align: left;
+  gap: 1px 1px;
+}
+
+div.people-link {
+  grid-column: 1;
+  text-justify: right;
+  justify-items: center;
+ 
+  justify-content: center;
+  align-content: center;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+div.people-info {
+color: red;
+list-style: none;
+text-justify: right;
+padding-right: 10px;
+line-height: 18px;
+justify-items: center;
+ 
+justify-content: center;
+align-content: center;
+}
+.span{
+  font-size: 24px;
+  padding-left: 20px;
+  padding-top: 20px;
+  grid-column: 1/3;
+}
+.foo {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  
+  
+ 
+
 }

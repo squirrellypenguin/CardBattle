@@ -38,16 +38,35 @@ let person = 0
               }
               // home = home[0].toUpperCase() + home.substring(1)
       return (
-              <div key={index} id={index}>            
+              <div className="small-container"  key={index} id={index}>            
             
-              <a href={person.wiki} >
+            
+           
+              <div className="span"> {person.name}</div>
+              <div className="people-link">
                 <img className="small-picture" src={person.image}/>
-                <p >{person.name}</p></a>
-              <p> Homeworld: {person.homeworld}</p>
-              <div className="small-container" >
-              <p>Standing: {person.height} | Mass: {person.mass}</p>
-              <p>{thing}</p>
-             </div>
+                
+                
+                
+                <a href={person.wiki}> 
+               
+               <button>
+                 Details
+               </button></a>
+              
+               </div>     
+
+              <div className="people-info">
+                <p>Home: {person.homeworld} <br />
+                Standing: {person.height} <br/>Mass: {person.mass}<br />
+              {thing}</p>
+              <div className="button">
+           
+              <button>
+                Details
+              </button>             </div>
+         </div>
+          
               {/* <button className="btn btn-lg btn-warning btn-block" key={index} onClick={handleClick({index})} value={index}>List</button> */}
            
               </div>
@@ -58,8 +77,7 @@ let person = 0
 
 return      (
       <div className="container">
-        
-    
+      
  {person}
       </div>
     );
