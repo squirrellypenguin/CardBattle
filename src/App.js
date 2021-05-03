@@ -5,7 +5,7 @@ import React, {
   useEffect
 } from 'react';
 import Main from './pages/Main'
-
+import Nav from './components/Nav'
 
 function App() {
 
@@ -50,8 +50,8 @@ function App() {
 
   return (
      <div className = "App" >
- 
-          <h1> Star Wars</h1>
+ <Nav />
+          <h1>Rebel's Guide to the Galaxy</h1>
        
   <Main />
 

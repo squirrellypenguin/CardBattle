@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+
+
+
 .App {
   text-align: center;
+  font-family: 'Poller One';
 }
 
 .small-picture {
@@ -12,7 +17,7 @@
   padding-left: 0rem;
   display: grid;
   grid-template-columns: 1fr ;
-
+  font-style: serif;
   gap: 5px 5px;
 }
 
