@@ -7,12 +7,13 @@ const Nav = (props) => {
       <Link to="/">
         <div>Main</div>
       </Link>
-      <Link to="/people">
-        <div>Index</div>
-      </Link>
       <Link to="/battle">
-        <div>Fight!</div>
+        <img src="https://i.ibb.co/SQrpg5c/duel.png" /><div>Fight!</div>
       </Link>
+      <Link to="/people">
+      <img src="https://i.ibb.co/5F4ntKf/pngwing-com-6.png" /> <div>Index</div>
+      </Link>
+     
     </div>
   );
 };

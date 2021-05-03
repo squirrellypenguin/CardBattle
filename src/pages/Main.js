@@ -14,8 +14,9 @@ const victory = () => {
 }
   // Set up up api call function 
   const url = 'https://akabab.github.io/starwars-api/api/all.json'
+  const planetURL = 'https://swapi.dev/api/planets/'
   const [people, setPeople] = useState(null)
-
+  const [planets, setPlanet] = useState(null)
   const [fight, setFight] =useState([{}]);
   
   const oppponetGenerator = () => {
@@ -23,7 +24,13 @@ const victory = () => {
 // console.log(core)
 
   }
-
+  const getPlanet = async (planetURL) => {
+    const response = await fetch(planetURL);
+    const data = await response.json();
+    console.log(data)
+    setPlanet(data);
+    // console.log(data)
+  };
 
   const getPeople = async () => {
     const response = await fetch(url);
@@ -45,7 +52,7 @@ const victory = () => {
   }
   useEffect(() => {
      getPeople();
-    
+    getPlanet(planetURL);
    }, []);
 
    const handleClick = (input) => {
@@ -95,7 +102,9 @@ const victory = () => {
         <Route path="/battle/">
             <Battle fight={fight}  victory={victory}  /> 
             </Route>
-
+            <Route path="/planets/">
+            <Planets planets={planets} /> 
+            </Route>
         {/* <Route path="/planets/">
         <People people={Planets} />
         </Route> */}

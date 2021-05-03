@@ -6,34 +6,20 @@ import React, {
 
 const Planets = (props) => {
    
-  const [count, setCount] = useState(0);  
-  const urlPlanets = 'https://swapi.dev/api/planets/'
-  // const getCount1 = async (urlPlanets) => {
-  // let please = console.log(data)
-  const getCount1 = async (urlPlanets) => {
-    // let please = console.log(data)
-    const response = await fetch(urlPlanets)
-    let results = await response.json()
-    console.log(results.count)
-    console.log([...results.results])
-    let   bar = Math.ceil(results.count/10)
-    console.log(bar)
-    console.log(count.please)
-    setCount(bar)
-    return (
-      console.log("exit")
-    )
-  }
-  useEffect(() => {
-    getCount1(urlPlanets);
-    // loopOfData(listOfData);
-    // getPeople();
-  }, []);
+  const [planets, setPeople] = useState({});  
+  const urlPlanets1 = 'https://swapi.dev/api/planets/'
+  const urlPlanets2 = 'https://swapi.dev/api/planets/2'
+  const urlPlanets3 = 'https://swapi.dev/api/planets/3'
+  const urlPlanets4 = 'https://swapi.dev/api/planets/4'
+
+
+
 
     return (
 
         <div>
-        <h2> Planets - Total - {count} </h2>
+          <h1> HEre</h1>
+        <h2> Planets - Total - </h2>
         </div>
 
     )
