@@ -8,8 +8,10 @@ import People from './People/People'
 const Main = (props) => {
 
         //  
-
-
+        const [counter, setCounter] = useState(0);
+const victory = () => {
+    setCounter(counter +1);
+}
   // Set up up api call function 
   const url = 'https://akabab.github.io/starwars-api/api/all.json'
   const [people, setPeople] = useState(null)
@@ -91,7 +93,7 @@ const Main = (props) => {
             <People people={people}  handleClick={handleClick}/>
         </Route>
         <Route path="/battle/">
-            <Battle fight={fight}    /> 
+            <Battle fight={fight}  victory={victory}  /> 
             </Route>
 
         {/* <Route path="/planets/">
