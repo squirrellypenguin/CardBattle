@@ -12,8 +12,7 @@
 Will use the Star Wars API to create a guide for the SW universe.  Final goal is to create a pusedo card battle game with a counter for recording wins and loses; perhaps remove losing toon from array. 
 
 ## API
-
-[SWAPI](https://swapi.dev/api/people/)
+[Starwars API](https://akabab.github.io/starwars-api/api/all.json) & [SWAPI](https://swapi.dev/api/people/)
 
 ```
 {
@@ -69,11 +68,11 @@ Will use the Star Wars API to create a guide for the SW universe.  Final goal is
 - Allow user to interact with the page
 - Craft battle logic
 - Counter for rounds won
-- Remove defeated player
-
+- Alert player for results
+- Fast facts for planets and dynamic matching w/ wiki
 
 #### PostMVP EXAMPLE
-
+- Remove defeated player
 - Add localStorage storage for persons
 
 
@@ -100,20 +99,20 @@ ____________________________________________________________________________
 | Header | This will render the header include the nav | 
 | Footer | This will render the footer | 
 | Main	|  Provide  route to sub sections|
-|Transports/Transport| Subsection overview with detail component |
-|Planets/Planet|  Subsection overview with detail component |
-|People|Person|  Subsection overview with detail component |
+|Planets & Planet|  Subsection overview with detail component |
+|People|  Subsection overview with detail component |
 |Battle| Draws in the selected people and fight one another with simple logic and sets counter |
-|Counter| counts|
+|Nav| Provides direction |
 
 _________________________________________________________________________________________________________
 | Build Step | Priority | Estimated Time | Actual Time | __ |
 | --- | :---: |  :---: | :---: | --- |
-| Assemble data | H | 10 hrs | TBD hrs | Frame api requests, and request prop handing and state management|
-|Build out framework | H | 10 hrs |TBD hrs| build basic layout for data |
-| Render data | M | 10 hrs| TBD hrs | deal with any image assets basic semantic markup |
-|Less ugly| L | 05 hrs |TBD hrs | colors!!!!!!|
+| Assemble data | H | 10 hrs | 6 hrs | Frame api requests, and request prop handing and state management|
+|Build out framework | H | 10 hrs |10 hrs| build basic layout for data |
+| Render data | M | 10 hrs| 5 hrs | deal with any image assets basic semantic markup |
+|Less ugly| L | 05 hrs |∞ hrs | colors!!!!!!|
 | Total |   | 35 hrs| TBD hrs | |
+
 ## Additional Libraries
 
 Likely react bootstrap material 
