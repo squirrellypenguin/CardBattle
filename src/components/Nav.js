@@ -5,6 +5,7 @@ const Nav = (props) => {
   return (
     <div className="nav">
       <Link to="/">
+          <img src="https://i.ibb.co/jvG4LQy/Star-Wars-Rebel-Alliance-Ships-Vinyl-Decal-Car.jpg" />
         <div>Main</div>
       </Link>
       <Link to="/battle">

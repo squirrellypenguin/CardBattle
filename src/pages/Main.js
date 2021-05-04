@@ -16,7 +16,7 @@ const victory = () => {
   const url = 'https://akabab.github.io/starwars-api/api/all.json'
   const planetURL = 'https://swapi.dev/api/planets/'
   const [people, setPeople] = useState(null)
-  const [planets, setPlanet] = useState(null)
+  const [planets, setPlanet] = useState([{}])
   const [fight, setFight] =useState([{}]);
   
   const oppponetGenerator = () => {
@@ -28,9 +28,12 @@ const victory = () => {
     const response = await fetch(planetURL);
     const data = await response.json();
     console.log(data)
-    setPlanet(data);
+    setPlanet(data.results);
     // console.log(data)
   };
+
+ 
+
 
   const getPeople = async () => {
     const response = await fetch(url);

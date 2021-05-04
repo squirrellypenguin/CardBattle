@@ -6,20 +6,36 @@ import React, {
 
 const Planets = (props) => {
    
-  const [planets, setPeople] = useState({});  
-  const urlPlanets1 = 'https://swapi.dev/api/planets/'
-  const urlPlanets2 = 'https://swapi.dev/api/planets/2'
-  const urlPlanets3 = 'https://swapi.dev/api/planets/3'
-  const urlPlanets4 = 'https://swapi.dev/api/planets/4'
 
+let planet = 0
+planet = props.planets.map(
+  (planet, index) => {
+    console.log(planet.name)
+return (
+  <div className="color" key={index}>
+  <a className="bigger"  href={'https://starwars.fandom.com/wiki/'+ planet.name} >{planet.name}</a> <br/>
+   <ul><div className='card'>
+     <li>Clime: {planet.climate} </li>
+    <li>Features: {planet.terrain}</li>
+  <li>Diameter: {planet.diameter}</li>
+<li>Orbit: {planet.orbital_period} | {planet.rotation_period}</li>
+<li>Beings: {planet.population}</li>
+</div>
 
-
+</ul>
+<embed className="embed" src={'https://starwars.fandom.com/wiki/'+ planet.name}  />
+</div>
+  )
+  }
+)
 
     return (
 
         <div>
           <h1> HEre</h1>
         <h2> Planets - Total - </h2>
+        {planet}
+      
         </div>
 
     )
