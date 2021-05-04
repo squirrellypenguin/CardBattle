@@ -84,6 +84,11 @@ a {
   display: flex;
   justify-content: space-evenly;
 }
+.battle-background {
+  background-color:rgba(63, 54, 57, 0.72);
+  border-radius: 30px;
+  margin-left: 20px;
+}
 @media (min-width: 768px) {
   .container {
     grid-template-columns: 1fr 1fr;
@@ -108,10 +113,19 @@ a {
     background-size: auto;
     background-image: url('https://i.ibb.co/jbdpyR8/wp5344722-luke-skywalker-vs-darth-vader-wallpapers.jpg');
   }
+  .card {
+    justify-self: end;
+    margin-right: -1000px;
+    margin-left: 200px;
+  }
   .embed {
     height: 600px;
     width: 800px;
     padding-bottom: 20px;
+  }
+
+  .spacer {
+    padding-bottom: 300px;
   }
 
   .nav {
@@ -205,12 +219,22 @@ text-transform: capitalize;
 .battle{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  border-radius: 30px;;
 }  
 
+.battle-text {
+  color:white;
+}
 .card {
   background-color:  rgba(63, 54, 57, 0.72);
   padding: 20px;
 }
 .bigger {
   font-size: 36px;
+}
+
+.battle-button {
+  padding: 30px;
+  background-color: yellow;
+  font-family: 'Oswald';
 }

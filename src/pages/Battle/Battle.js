@@ -19,7 +19,7 @@ const Battle = (props) => {
         return (
             <div  key={index} id={index}>
                 <img className="small-picture" src={fight.image}/>
-                    <p>{fight.name}</p>
+                    <p className="battle-text">{fight.name}</p>
             </div>
      )
     }
@@ -62,15 +62,16 @@ const Battle = (props) => {
 
 
     return (
-        <div>
+        <div className="battle-background">
               <h2>FIGHT!</h2>
                 <div className="battle">
       
         {fight}
-     
-      <button onClick={doBattle}>Fight</button>
+     <br />
+     </div>
+      <button className="battle-button" onClick={doBattle}>Fight</button>
         </div>
-</div>
+
     )
 }
 
