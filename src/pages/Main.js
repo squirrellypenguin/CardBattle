@@ -74,29 +74,30 @@ const victory = () => {
 
 
     return (
-    <div>    
+    <div >    
         <Switch>
         <Route exact path='/'>
-        
-                <h1>MAIN APP</h1>
-        
+        <div className="spacer">
+                <h2 className="reveal">Rebel's Guide to the Galaxy</h2>
+        </div>
+        <div className="home-buttons">
             <Link to="/people">
-                <div>
-                    <p>peeps</p>
+                <div className="button">
+                    <p>People</p>
                 </div>
             </Link>
 
             <Link to="/planets">
-                <div>
-                    <p>planets</p>
+                <div className="button">
+                    <p>Planets</p>
                 </div>
             </Link>
-
-            <Link to="/battle">
+</div>
+            {/* <Link to="/battle">
                 <div>
                     <p>Battle</p>
                 </div>
-            </Link>
+            </Link> */}
         </Route>
        
         <Route path="/people/">

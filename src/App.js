@@ -51,7 +51,7 @@ function App() {
   return (
      <div className = "App" >
  <Nav />
-          <h1>Rebel's Guide to the Galaxy</h1>
+          <h1>  RG2G</h1>
        
   <Main />
 

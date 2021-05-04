@@ -43,7 +43,7 @@ const People = (props) => {
 
   let thing = "";
 
-   if (props !== null) {
+   if (props.people !== null) {
     
     person = props.people.map(    
         (person, index) => {
@@ -71,10 +71,10 @@ const People = (props) => {
               Standing: {person.height} <br/>Mass: {person.mass}<br />
               {thing}</p>
               <div className="people-button">
-              <a href={person.wiki}> 
-              <button>
-              Details
-              </button></a>
+             
+              <button> <a href={person.wiki}> 
+              Details</a>
+              </button>
                  
              <button onClick={ () => props.handleClick(person)}>
                   Select

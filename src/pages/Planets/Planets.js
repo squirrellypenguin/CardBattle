@@ -13,8 +13,9 @@ planet = props.planets.map(
     console.log(planet.name)
 return (
   <div className="color" key={index}>
-  <a className="bigger"  href={'https://starwars.fandom.com/wiki/'+ planet.name} >{planet.name}</a> <br/>
-   <ul><div className='card'>
+ 
+   <ul>  Overview 
+     <div className='card'>
      <li>Clime: {planet.climate} </li>
     <li>Features: {planet.terrain}</li>
   <li>Diameter: {planet.diameter}</li>

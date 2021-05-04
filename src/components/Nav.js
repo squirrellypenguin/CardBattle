@@ -9,7 +9,7 @@ const Nav = (props) => {
         <div>Main</div>
       </Link>
       <Link to="/battle">
-        <img src="https://i.ibb.co/SQrpg5c/duel.png" /><div>Fight!</div>
+        <img src="https://i.ibb.co/SQrpg5c/duel.png" /><div>Battle</div>
       </Link>
       <Link to="/people">
       <img src="https://i.ibb.co/5F4ntKf/pngwing-com-6.png" /> <div>Index</div>

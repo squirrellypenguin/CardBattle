@@ -3,7 +3,7 @@ import "../../App.css"
 
 const Battle = (props) => {
     
-    
+    console.log(props)
     const randomizer = () => {
         return Math.floor(Math.random() * (100 - 0) + 0);
  
@@ -27,6 +27,9 @@ const Battle = (props) => {
 
 
     let doBattle = () => {
+        if ((props.fight[0].name === undefined)) {
+            return alert('Pick a fighter from index')
+         }
         console.log("Fight is on", props.fight[0].name)
         let player = randomizer() * (props.fight[0].mass * props.fight[0].height)
         let opponent = randomizer() * (props.fight[1].mass * props.fight[1].height)
@@ -41,18 +44,18 @@ const Battle = (props) => {
         }
         let winner = Math.max(player, opponent)
         if (winner === player){
-            console.log("You have won!!!")
+            alert("You have won!!!")
             props.victory(1)
         } else {
-            console.log("Better luck next time!")
+            alert("Better luck next time!")
         }
     }
 
 
 
 
-    if (isNaN(props)){
-    console.log("trure")
+    if (isNaN(props.fight)){
+    console.log("dfaert")
 }
 
 
