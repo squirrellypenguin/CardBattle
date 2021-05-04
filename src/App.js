@@ -1,60 +1,60 @@
 import './App.css';
-import {
-  Route,
-  Switch
-} from 'react-router-dom';
+import {Route,Switch} from 'react-router-dom';
 import React, {
   useState,
   useEffect
 } from 'react';
-
-
+import Main from './pages/Main'
+import Nav from './components/Nav'
 
 function App() {
-  const [people, setPeople] = useState([])
-  let data = ""
-  const url = 'https://swapi.dev/api/people/'
 
+
+
+  let results = ""
+  const url = 'https://swapi.dev/api/'
+  let listOfData= ["people", "planets", 'starships', 'vehicles']
+  const urlPeople = 'https://swapi.dev/api/people/'
+  const urlShips = ''
+  const urlPlanets = 'https://swapi.dev/api/planets/'
+
+  const loopOfData = (listOfData) => {
+    for (let i = 0; i < listOfData.length; i++){
+      let fetchURL = url + listOfData[i]
+        console.log(fetchURL)
+        getCount(fetchURL, listOfData[i])
+   }
+
+ }
+ 
   // Retrieves the count for the entries 
-  const getCount = async () => {
-    const response = await fetch(url)
-    data = await response.json()
-    console.log(data.count)
-    console.log(...data.results)
-    return (
-      <h1>{data.count}</h1>
-    )
+  const getCount = async (urlPeople) => {
+    // let please = console.log(data)
+    const response = await fetch(urlPeople)
+    results = await response.json()
+    console.log(results.count)
+    console.log([...results.results])
+    let   bar = Math.ceil(results.count/10)
+    console.log(bar)
+    // console.log(count.please)
+    // setCount({...count[0],planets:bar })
+
   }
+  // const foo = setPeople;
+  // useEffect(() => {
+  //   getCount(urlPeople);
+  //   getCount1(urlPlanets);
+  //   // loopOfData(listOfData);
+  //   // getPeople();
+  // }, []);
 
-  const getPeople = async () => {
-    const storage = []
-    for (let i = 0; i < 5; i++) {
-      let offset = i + 1
-      const response = await fetch(`${url}${offset}`)
-      let data = await response.json()
-      storage.push(data)
-      console.log(storage)
-      // setPeople(...people, data)
-      // const storage = [{}]
-      // let foo = storage.push(data)
-      // console.log(storage)
-      // setPeople( [ ...data] )
-      //  console.log(storage)
-    }
+  return (
+     <div className = "App" >
+ <Nav />
+          <h1>  RG2G</h1>
+       
+  <Main />
 
-
-    setPeople(storage)
-    // setPeople( [...people, data] )
-  }
-
-
-  useEffect(() => {
-    getCount();
-    // getPeople();
-  }, []);
-
-  return ( <div className = "App" >
-  <h1> Star Wars</h1>
     </div>
   );
 }
