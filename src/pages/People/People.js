@@ -42,8 +42,8 @@ const People = (props) => {
                 <a href={person.wiki}>Details</a>
                 </button>
            
-                <button >
-                <a onClick={ () => props.handleClick(person)} > Select </a>
+                <button onClick={ () => props.handleClick(person)}>
+                Select 
                 </button>
               </div>
             </div>
